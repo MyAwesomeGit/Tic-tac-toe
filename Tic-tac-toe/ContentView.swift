@@ -2,8 +2,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Grid()
-            .padding(.horizontal, 20)
+        VStack {
+            NewGameButton()
+            
+            Grid()
+                .padding(.horizontal, 20)
+        }
     }
 }
 

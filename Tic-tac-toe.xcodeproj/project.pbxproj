@@ -18,6 +18,7 @@
 		C864C0E72C04CB8E00C65F8E /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0E62C04CB8E00C65F8E /* Row.swift */; };
 		C864C0E92C04CBFE00C65F8E /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0E82C04CBFE00C65F8E /* Grid.swift */; };
 		C864C0EB2C04CC1100C65F8E /* GridShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0EA2C04CC1100C65F8E /* GridShape.swift */; };
+		C864C0ED2C04CD4900C65F8E /* NewGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0EC2C04CD4900C65F8E /* NewGameButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C864C0E62C04CB8E00C65F8E /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		C864C0E82C04CBFE00C65F8E /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		C864C0EA2C04CC1100C65F8E /* GridShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridShape.swift; sourceTree = "<group>"; };
+		C864C0EC2C04CD4900C65F8E /* NewGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				C864C0E42C04CA7000C65F8E /* Cell.swift */,
 				C864C0E62C04CB8E00C65F8E /* Row.swift */,
 				C864C0E82C04CBFE00C65F8E /* Grid.swift */,
+				C864C0EC2C04CD4900C65F8E /* NewGameButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				C864C0D12C04C7A400C65F8E /* ContentView.swift in Sources */,
 				C864C0E92C04CBFE00C65F8E /* Grid.swift in Sources */,
 				C864C0DE2C04C9A500C65F8E /* Nought.swift in Sources */,
+				C864C0ED2C04CD4900C65F8E /* NewGameButton.swift in Sources */,
 				C864C0CF2C04C7A400C65F8E /* Tic_tac_toeApp.swift in Sources */,
 				C864C0E72C04CB8E00C65F8E /* Row.swift in Sources */,
 				C864C0E52C04CA7000C65F8E /* Cell.swift in Sources */,
