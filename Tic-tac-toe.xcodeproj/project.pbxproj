@@ -16,6 +16,8 @@
 		C864C0E32C04CA1600C65F8E /* CrossShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0E22C04CA1600C65F8E /* CrossShape.swift */; };
 		C864C0E52C04CA7000C65F8E /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0E42C04CA7000C65F8E /* Cell.swift */; };
 		C864C0E72C04CB8E00C65F8E /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0E62C04CB8E00C65F8E /* Row.swift */; };
+		C864C0E92C04CBFE00C65F8E /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0E82C04CBFE00C65F8E /* Grid.swift */; };
+		C864C0EB2C04CC1100C65F8E /* GridShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0EA2C04CC1100C65F8E /* GridShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		C864C0E22C04CA1600C65F8E /* CrossShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossShape.swift; sourceTree = "<group>"; };
 		C864C0E42C04CA7000C65F8E /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		C864C0E62C04CB8E00C65F8E /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		C864C0E82C04CBFE00C65F8E /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		C864C0EA2C04CC1100C65F8E /* GridShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				C864C0DF2C04C9F400C65F8E /* Cross.swift */,
 				C864C0E42C04CA7000C65F8E /* Cell.swift */,
 				C864C0E62C04CB8E00C65F8E /* Row.swift */,
+				C864C0E82C04CBFE00C65F8E /* Grid.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				C864C0E22C04CA1600C65F8E /* CrossShape.swift */,
+				C864C0EA2C04CC1100C65F8E /* GridShape.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -169,8 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C864C0E02C04C9F400C65F8E /* Cross.swift in Sources */,
+				C864C0EB2C04CC1100C65F8E /* GridShape.swift in Sources */,
 				C864C0E32C04CA1600C65F8E /* CrossShape.swift in Sources */,
 				C864C0D12C04C7A400C65F8E /* ContentView.swift in Sources */,
+				C864C0E92C04CBFE00C65F8E /* Grid.swift in Sources */,
 				C864C0DE2C04C9A500C65F8E /* Nought.swift in Sources */,
 				C864C0CF2C04C7A400C65F8E /* Tic_tac_toeApp.swift in Sources */,
 				C864C0E72C04CB8E00C65F8E /* Row.swift in Sources */,
