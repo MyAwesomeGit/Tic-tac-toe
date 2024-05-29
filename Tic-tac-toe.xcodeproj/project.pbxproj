@@ -22,6 +22,7 @@
 		C864C0EF2C04CFCB00C65F8E /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = C864C0EE2C04CFCB00C65F8E /* README.MD */; };
 		C89171E52C07735700737EEE /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89171E42C07735700737EEE /* CellViewModel.swift */; };
 		C89171E72C07738700737EEE /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89171E62C07738700737EEE /* CellType.swift */; };
+		C89171E92C07740700737EEE /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89171E82C07740700737EEE /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		C864C0EE2C04CFCB00C65F8E /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 		C89171E42C07735700737EEE /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		C89171E62C07738700737EEE /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
+		C89171E82C07740700737EEE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				C89171E42C07735700737EEE /* CellViewModel.swift */,
 				C89171E62C07738700737EEE /* CellType.swift */,
+				C89171E82C07740700737EEE /* GameViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				C864C0E32C04CA1600C65F8E /* CrossShape.swift in Sources */,
 				C864C0D12C04C7A400C65F8E /* ContentView.swift in Sources */,
 				C864C0E92C04CBFE00C65F8E /* Grid.swift in Sources */,
+				C89171E92C07740700737EEE /* GameViewModel.swift in Sources */,
 				C864C0DE2C04C9A500C65F8E /* Nought.swift in Sources */,
 				C89171E72C07738700737EEE /* CellType.swift in Sources */,
 				C864C0ED2C04CD4900C65F8E /* NewGameButton.swift in Sources */,
