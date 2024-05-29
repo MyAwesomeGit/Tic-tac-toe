@@ -1,26 +1,26 @@
 import SwiftUI
 
 struct Grid: View {
-    @State var isNextNought: Bool = false
     
+    @EnvironmentObject var gameViewModel: GameViewModel
+        
     var body: some View {
         ZStack {
             GridShape()
-                .stroke(.indigo, lineWidth: 15)
+                .stroke(.black, lineWidth: 15)
             VStack {
-                Row(isNextNought: $isNextNought)
-                Row(isNextNought: $isNextNought)
-                Row(isNextNought: $isNextNought)
+                Row()
+                Row()
+                Row()
             }
         }
-        
-        .aspectRatio(contentMode:.fit)
-        .background(Color.black.opacity(0.9))
-        .edgesIgnoringSafeArea(.all)
+         .edgesIgnoringSafeArea(.all)
     }
 }
 
 
-#Preview {
-    Grid()
+struct Grid_Previews: PreviewProvider {
+    static var previews: some View {
+        Grid()
+    }
 }
