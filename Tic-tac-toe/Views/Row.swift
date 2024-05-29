@@ -9,7 +9,6 @@ struct Row: View {
             Cell()
             }
         .aspectRatio(contentMode: .fit)
-        .background(Color.black.opacity(1.0))
     }
 }
 

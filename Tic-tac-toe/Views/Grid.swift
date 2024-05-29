@@ -7,7 +7,6 @@ struct Grid: View {
     var body: some View {
         ZStack {
             GridShape()
-                .stroke(.black, lineWidth: 15)
             VStack {
                 Row()
                 Row()
