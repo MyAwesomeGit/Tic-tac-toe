@@ -2,24 +2,26 @@ import SwiftUI
 
 struct Cell: View {
     
-    enum CellType {
-        case hidden
-        case nought
-        case cross
-    }
+    @StateObject var viewModel: CellViewModel
+    @EnvironmentObject var gameViewModel: GameViewModel
     
-    @State private var type: CellType = .hidden
-    @Binding var isNextNought: Bool
+    init() {
+        _viewModel = StateObject(wrappedValue: CellViewModel())
+    }
     
     @ViewBuilder
     private var content: some View {
-        switch type {
-        case .hidden:
+        if gameViewModel.newGame == true {
             Color.clear
-        case .nought:
-            Nought()
-        case .cross:
-            Cross()
+        } else {
+            switch viewModel.cellType {
+            case .hidden:
+                Color.clear
+            case .nought:
+                Nought()
+            case .cross:
+                Cross()
+            }
         }
     }
     
@@ -28,22 +30,26 @@ struct Cell: View {
             .padding(20)
             .contentShape(Rectangle())
             .onTapGesture {
-                guard type == .hidden else {
-                    return
+                if gameViewModel.newGame == true {
+                    viewModel.cellType = .hidden
                 }
-                type = isNextNought ? .nought : .cross
-                isNextNought.toggle()
+                if viewModel.cellType == .nought || viewModel.cellType == .cross {
+                    return
+                } else {
+                    viewModel.cellType = gameViewModel.isNextNought ? .nought : .cross
+                    gameViewModel.isNextNought.toggle()
+                }
             }
             .aspectRatio(contentMode: .fit)
             .background(Color.gray.opacity(0.9))
-            .background(Color.green.opacity(0.9))
+            .background(Color.green.opacity(0.5))
     }
 }
 
 
 struct Cell_Previews: PreviewProvider {
     static var previews: some View {
-        Cell(isNextNought:.constant(true))
-           .aspectRatio(contentMode:.fit)
+        Cell()
+            .aspectRatio(contentMode:.fit)
     }
 }
