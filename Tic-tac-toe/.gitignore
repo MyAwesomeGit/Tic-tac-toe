@@ -1,2 +1,6 @@
 .DS_Store
-*xcworkspace/xcuserdata/
+Playground.swift
+# Ignore xcuserdata in all directories
+xcuserdata/
+*xcuserdata/
+**/xcuserdata/
