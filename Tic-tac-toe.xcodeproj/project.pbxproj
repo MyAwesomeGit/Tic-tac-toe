@@ -53,6 +53,7 @@
 		C864C0C22C04C7A400C65F8E = {
 			isa = PBXGroup;
 			children = (
+				C864C0EE2C04CFCB00C65F8E /* README.MD */,
 				C864C0CD2C04C7A400C65F8E /* Tic-tac-toe */,
 				C864C0CC2C04C7A400C65F8E /* Products */,
 			);
@@ -69,7 +70,6 @@
 		C864C0CD2C04C7A400C65F8E /* Tic-tac-toe */ = {
 			isa = PBXGroup;
 			children = (
-				C864C0EE2C04CFCB00C65F8E /* README.MD */,
 				C864C0DC2C04C98700C65F8E /* Views */,
 				C864C0CE2C04C7A400C65F8E /* Tic_tac_toeApp.swift */,
 				C864C0D02C04C7A400C65F8E /* ContentView.swift */,
