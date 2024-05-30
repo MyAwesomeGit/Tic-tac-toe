@@ -2,15 +2,19 @@ import SwiftUI
 
 struct NewGameButton: View {
     
-    @EnvironmentObject var gameViewModel: GameViewModel
+    @Binding var newGame: Bool
     
-    func newGame() {
-        gameViewModel.newGame = true
+    init(newGame: Binding<Bool>) {
+        _newGame = newGame
+    }
+    
+    private func createNewGame() {
+        newGame = true
     }
     
     var body: some View {
         Button("New game") {
-            newGame()
+            createNewGame()
         }
        .bold()
        .padding(20)
@@ -21,5 +25,5 @@ struct NewGameButton: View {
 
 
 #Preview {
-    NewGameButton()
+    NewGameButton(newGame: .constant(true))
 }
