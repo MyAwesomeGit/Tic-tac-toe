@@ -1,16 +1,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var gameViewModel: GameViewModel = GameViewModel()
+    
     var body: some View {
         VStack {
-            NewGameButton()
             
-            Grid()
+            NewGameButton(newGame: $gameViewModel.newGame)
+            
+            Grid(newGame: $gameViewModel.newGame, isNextNought: $gameViewModel.isNextNought)
                 .padding(.horizontal, 20)
         }
     }
 }
 
-#Preview {
-    ContentView()
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .aspectRatio(contentMode: .fit)
+    }
 }
