@@ -1,16 +1,21 @@
 import SwiftUI
 
 struct Grid: View {
+    @Binding var newGame: Bool
+    @Binding var isNextNought: Bool
     
-    @EnvironmentObject var gameViewModel: GameViewModel
+    init(newGame: Binding<Bool>, isNextNought: Binding<Bool>) {
+        _newGame = newGame
+        _isNextNought = isNextNought
+    }
         
     var body: some View {
         ZStack {
             GridShape()
             VStack {
-                Row()
-                Row()
-                Row()
+                Row(newGame: $newGame, isNextNought: $isNextNought)
+                Row(newGame: $newGame, isNextNought: $isNextNought)
+                Row(newGame: $newGame, isNextNought: $isNextNought)
             }
         }
          .edgesIgnoringSafeArea(.all)
@@ -20,6 +25,6 @@ struct Grid: View {
 
 struct Grid_Previews: PreviewProvider {
     static var previews: some View {
-        Grid()
+        Grid(newGame: .constant(false), isNextNought: .constant(false))
     }
 }
