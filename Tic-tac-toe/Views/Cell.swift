@@ -1,3 +1,4 @@
+
 import SwiftUI
 
 struct Cell: View {
@@ -46,10 +47,9 @@ struct Cell: View {
             .aspectRatio(contentMode: .fit)
             .background(Color.gray.opacity(0.9))
             .background(Color.green.opacity(0.5))
-            .onChange(of: $newGame.wrappedValue) { oldValue, newValue in
+            .onChange(of: newGame) { newValue in
                 if newValue == true {
                     viewModel.cellType = .hidden
-                    
                 }
             }
     }
@@ -62,3 +62,7 @@ struct Cell_Previews: PreviewProvider {
             .aspectRatio(contentMode:.fit)
     }
 }
+
+
+
+

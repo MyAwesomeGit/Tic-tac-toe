@@ -46,7 +46,7 @@
 		C89171E42C07735700737EEE /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		C89171E62C07738700737EEE /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
 		C89171E82C07740700737EEE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
-		C89171EA2C0775DA00737EEE /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
+		C89171EA2C0775DA00737EEE /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Playground.swift; path = "Tic-tac-toe/Playground.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +63,7 @@
 		C864C0C22C04C7A400C65F8E = {
 			isa = PBXGroup;
 			children = (
+				C89171EA2C0775DA00737EEE /* Playground.swift */,
 				C864C0EE2C04CFCB00C65F8E /* README.MD */,
 				C864C0CD2C04C7A400C65F8E /* Tic-tac-toe */,
 				C864C0CC2C04C7A400C65F8E /* Products */,
@@ -87,7 +88,6 @@
 				C864C0D02C04C7A400C65F8E /* ContentView.swift */,
 				C864C0D22C04C7A600C65F8E /* Assets.xcassets */,
 				C864C0D42C04C7A600C65F8E /* Preview Content */,
-				C89171EA2C0775DA00737EEE /* Playground.swift */,
 			);
 			path = "Tic-tac-toe";
 			sourceTree = "<group>";
@@ -360,14 +360,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tic-tac-toe/Preview Content\"";
-				DEVELOPMENT_TEAM = 9C5QN9KC44;
+				DEVELOPMENT_TEAM = NRHF328K82;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,14 +391,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tic-tac-toe/Preview Content\"";
-				DEVELOPMENT_TEAM = 9C5QN9KC44;
+				DEVELOPMENT_TEAM = NRHF328K82;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
