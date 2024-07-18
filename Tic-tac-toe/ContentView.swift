@@ -2,14 +2,16 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var gameViewModel: GameViewModel = GameViewModel()
+    var colorManager = ColorManager()
     
     var body: some View {
-        VStack {
-            
-            NewGameButton(newGame: $gameViewModel.newGame)
-            
-            Grid(newGame: $gameViewModel.newGame, isNextNought: $gameViewModel.isNextNought)
-                .padding(.horizontal, 20)
+        ZStack {
+            colorManager.mainBackgroundColor.edgesIgnoringSafeArea(.all)
+            VStack {
+                NewGameButton(newGame: $gameViewModel.newGame)
+                Grid(newGame: $gameViewModel.newGame, isNextNought: $gameViewModel.isNextNought)
+                    .padding(.horizontal, 20)
+            }
         }
     }
 }
@@ -21,3 +23,6 @@ struct ContentView_Previews: PreviewProvider {
             .aspectRatio(contentMode: .fit)
     }
 }
+
+
+

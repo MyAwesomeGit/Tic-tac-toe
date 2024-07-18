@@ -3,6 +3,7 @@ import SwiftUI
 struct NewGameButton: View {
     
     @Binding var newGame: Bool
+    var colorManager = ColorManager()
     
     init(newGame: Binding<Bool>) {
         _newGame = newGame
@@ -13,13 +14,15 @@ struct NewGameButton: View {
     }
     
     var body: some View {
-        Button("New game") {
+        Button(action: {
             createNewGame()
+        }) {
+            Text("Новая игра")
+                .foregroundColor(colorManager.mainFontColor)
+                .font(.title)
         }
-       .bold()
-       .padding(20)
-       .contentShape(Rectangle())
-       .border(Color.black)
+        .padding(20)
+        .contentShape(Rectangle())
     }
 }
 

@@ -20,6 +20,7 @@
 		C864C0EB2C04CC1100C65F8E /* GridShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0EA2C04CC1100C65F8E /* GridShape.swift */; };
 		C864C0ED2C04CD4900C65F8E /* NewGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864C0EC2C04CD4900C65F8E /* NewGameButton.swift */; };
 		C864C0EF2C04CFCB00C65F8E /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = C864C0EE2C04CFCB00C65F8E /* README.MD */; };
+		C877EEF12C49584F004F30EB /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C877EEF02C49584F004F30EB /* ColorManager.swift */; };
 		C89171E52C07735700737EEE /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89171E42C07735700737EEE /* CellViewModel.swift */; };
 		C89171E72C07738700737EEE /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89171E62C07738700737EEE /* CellType.swift */; };
 		C89171E92C07740700737EEE /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89171E82C07740700737EEE /* GameViewModel.swift */; };
@@ -41,6 +42,7 @@
 		C864C0EA2C04CC1100C65F8E /* GridShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridShape.swift; sourceTree = "<group>"; };
 		C864C0EC2C04CD4900C65F8E /* NewGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameButton.swift; sourceTree = "<group>"; };
 		C864C0EE2C04CFCB00C65F8E /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
+		C877EEF02C49584F004F30EB /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		C89171E42C07735700737EEE /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		C89171E62C07738700737EEE /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
 		C89171E82C07740700737EEE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		C864C0CD2C04C7A400C65F8E /* Tic-tac-toe */ = {
 			isa = PBXGroup;
 			children = (
+				C877EEEF2C495843004F30EB /* Modifiers */,
 				C89171E32C07734600737EEE /* ViewModels */,
 				C864C0DC2C04C98700C65F8E /* Views */,
 				C864C0CE2C04C7A400C65F8E /* Tic_tac_toeApp.swift */,
@@ -118,6 +121,14 @@
 				C864C0EA2C04CC1100C65F8E /* GridShape.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		C877EEEF2C495843004F30EB /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C877EEF02C49584F004F30EB /* ColorManager.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		C89171E32C07734600737EEE /* ViewModels */ = {
@@ -207,6 +218,7 @@
 				C864C0E32C04CA1600C65F8E /* CrossShape.swift in Sources */,
 				C89171EB2C0775DA00737EEE /* Playground.swift in Sources */,
 				C864C0D12C04C7A400C65F8E /* ContentView.swift in Sources */,
+				C877EEF12C49584F004F30EB /* ColorManager.swift in Sources */,
 				C864C0E92C04CBFE00C65F8E /* Grid.swift in Sources */,
 				C89171E92C07740700737EEE /* GameViewModel.swift in Sources */,
 				C864C0DE2C04C9A500C65F8E /* Nought.swift in Sources */,
