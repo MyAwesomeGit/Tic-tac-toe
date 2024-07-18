@@ -1,21 +1,25 @@
 import SwiftUI
 
+var colorManager = ColorManager()
+
 struct ContentView: View {
-    @StateObject var gameViewModel: GameViewModel = GameViewModel()
-    var colorManager = ColorManager()
     
     var body: some View {
-        ZStack {
-            colorManager.mainBackgroundColor.edgesIgnoringSafeArea(.all)
-            VStack {
-                NewGameButton(newGame: $gameViewModel.newGame)
-                Grid(newGame: $gameViewModel.newGame, isNextNought: $gameViewModel.isNextNought)
-                    .padding(.horizontal, 20)
+        NavigationView {
+            NavigationLink(destination: GameView()) {
+                ZStack {
+                    colorManager.mainBackgroundColor.edgesIgnoringSafeArea(.all)
+                    Text("Начни игру")
+                        .padding()
+                        .cornerRadius(10)
+                        .shadow(radius: 5)
+                        .foregroundColor(colorManager.mainFontColor)
+                        .font(.largeTitle.bold())
+                }
             }
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -23,6 +27,3 @@ struct ContentView_Previews: PreviewProvider {
             .aspectRatio(contentMode: .fit)
     }
 }
-
-
-
