@@ -9,7 +9,9 @@ The game allows two players to take turns marking spaces in a 3x3 grid with eith
 The project is organized into several SwiftUI views and models:
 
 ### Views:
-- **ContentView**: The main view that displays the game board and a new game button.
+- **ContentView**: Provides navigation support for the app, allowing users to navigate between different parts of the app if needed.
+
+- **GameView**: The main view where the game logic and UI are combined.
 
 - **Grid**: Represents the game board, composed of rows.
 
